@@ -111,7 +111,7 @@ This forces the model to preserve important scene information while changing the
 
 ---
 
-# 📊 Dataset
+# Dataset
 
 The notebook uses the **BDD100K dataset** available through Kaggle.
 
@@ -168,7 +168,7 @@ giving a 100-image subset from each domain.
 
 ---
 
-# 🏗️ Model Architecture
+#  Model Architecture
 
 ## Generator
 
@@ -275,7 +275,7 @@ This allows the discriminator to focus on whether local textures and structures 
 
 ---
 
-# ⚙️ Training Configuration
+# Training Configuration
 
 The notebook uses the following configuration:
 
@@ -306,7 +306,7 @@ The two discriminators have separate Adam optimizers.
 
 ---
 
-# 🖼️ Image Preprocessing
+# Image Preprocessing
 
 Images are transformed using the following pipeline:
 
@@ -343,7 +343,7 @@ which is suitable for the generator's final `Tanh` activation.
 
 ---
 
-# 🔀 Unpaired Training
+# Unpaired Training
 
 One of the important characteristics of this implementation is that the images are **unaligned**.
 
@@ -444,7 +444,7 @@ This helps stabilize the translation and preserve important image characteristic
 
 ---
 
-# 🚀 Training
+# Training
 
 The model automatically selects CUDA when available:
 
@@ -488,7 +488,7 @@ The losses are monitored separately so that the adversarial, cycle-consistency a
 
 ---
 
-# 💾 Model Checkpoints
+# Model Checkpoints
 
 The notebook includes a checkpoint function for saving the two generators:
 
@@ -512,7 +512,7 @@ The checkpoint directory defaults to:
 
 ---
 
-# 🧪 Testing
+# Testing
 
 After training, the generators are switched to evaluation mode:
 
@@ -554,7 +554,7 @@ This provides a qualitative way to inspect the translation results.
 
 ---
 
-# 🛠️ Technologies Used
+#  Technologies Used
 
 - Python
 - PyTorch
@@ -571,7 +571,7 @@ This provides a qualitative way to inspect the translation results.
 
 ---
 
-# 📁 Project Structure
+#  Project Structure
 
 A recommended repository structure is:
 
